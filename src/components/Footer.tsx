@@ -2,8 +2,11 @@ import { motion } from 'framer-motion';
 import { FaWhatsapp, FaEnvelope, FaInstagram, FaFacebook } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
 
+import { useNavigate } from 'react-router-dom';
+
 const Footer = () => {
     const { t } = useLanguage();
+    const navigate = useNavigate();
     return (
         <footer id="book" style={{ backgroundColor: 'var(--color-secondary)', color: 'white', padding: 'clamp(4rem, 10vw, 6rem) 1.5rem 2rem' }}>
             <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
@@ -21,7 +24,7 @@ const Footer = () => {
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        onClick={() => window.location.href = '/booking'}
+                        onClick={() => navigate('/booking')}
                         style={{
                             padding: '1.2rem clamp(2rem, 5vw, 3rem)',
                             fontSize: 'clamp(1rem, 3vw, 1.2rem)',
