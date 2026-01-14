@@ -33,22 +33,20 @@ const TourVideo = () => {
                         backgroundColor: '#000'
                     }}
                 >
-                    <video
-                        controls
-                        playsInline
+                    <iframe
                         style={{
                             position: 'absolute',
                             top: 0,
                             left: 0,
                             width: '100%',
                             height: '100%',
-                            objectFit: 'cover'
+                            border: 'none'
                         }}
-                    >
-                        <source src="/peruu.mov" type="video/quicktime" />
-                        <source src="/peruu.mov" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                        src="https://www.youtube.com/embed/1lZg56Yw1fs"
+                        title="Sacred Valley Tour"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
                 </motion.div>
             </div>
         </section>
