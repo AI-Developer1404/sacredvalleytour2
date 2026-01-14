@@ -22,7 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 # Media
-*.mov
-*.mp4
-*.MOV
-*.MP4
+public/peruu.mov
+public/peruu.MOV
