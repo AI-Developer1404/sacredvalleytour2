@@ -42,7 +42,7 @@ const TourVideo = () => {
                             height: '100%',
                             border: 'none'
                         }}
-                        src="https://youtu.be/4rRqOTjByn4"
+                        src="https://www.youtube.com/embed/1lZg56Yw1fs?rel=0&modestbranding=1"
                         title="Sacred Valley Tour"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
